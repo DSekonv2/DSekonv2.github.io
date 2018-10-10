@@ -244,65 +244,68 @@
             </ul>
         </div>
     </div>
-    <!-- ***************************************************************************************SliderCarousel -->
-    <div class="slider-carousel-block container-fluid">
-        <div class="container">
-            <div class="slider-carousel">
-                <div class="s-c_card flex flex-column">
-                    <div class="title-big">
-                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                        <a href="#">Узнать подробнее</a>
-                    </div>
-                    <div class="title-small">
-                        <h5>Обновленный <span>Juke CVT</span></h5>
-                    </div>
-                    <div class="flex flex-column"><img src="./assets/images/page_index/carousel-2/juke.png" alt=""></div>
-                </div>
-                <div class="s-c_card flex flex-column">
-                    <div class="title-big">
-                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                        <a href="#">Узнать подробнее</a>
-                    </div>
-                    <div class="title-small">
-                        <h5>Обновленный Juke CVT</h5>
-                    </div>
-                    <div class="flex flex-column"><img src="./assets/images/page_index/carousel-2/juke.png" alt=""></div>
-                </div>
-                <div class="s-c_card flex flex-column">
-                    <div class="title-big">
-                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                        <a href="#">Узнать подробнее</a>
-                    </div>
-                    <div class="title-small">
-                        <h5>Обновленный Juke CVT</h5>
-                    </div>
-                    <div class="flex flex-column"><img src="./assets/images/page_index/carousel-2/juke.png" alt=""></div>
-                </div>
-            </div>
-        </div>
 
-<!--
+    <!-- ***************************************************************************************SliderCarousel -->
+<div class="slider-carousel-block container-fluid">
+    <div id="slider-carousel" class="slider-carousel container">
+        <carousel-3d :autoplay="true" :autoplay-timeout="7000" :controls-visible="true" :controls-width="98" :controls-height="98" :perspective="0" :space="550" :width="630" :height="500" :display="3">
+            <slide class="s-c_card flex flex-column" :index="0">
+                <div class="title-big">
+                    <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="title-small">
+                    <h5>Обновленный <span>Juke CVT</span></h5>
+                </div>
+                <div class="flex flex-column"><div class="img"></div></div>
+            </slide>
+            <slide class="s-c_card flex flex-column" :index="1">
+                <div class="title-big">
+                    <h3>Murano <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="title-small">
+                    <h5>Murano</h5>
+                </div>
+                <div class="flex flex-column"><div class="img"></div></div>
+            </slide>
+            <slide class="s-c_card flex flex-column" :index="2">
+                <div class="title-big">
+                    <h3>Qashqai <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="title-small">
+                    <h5>Qashqai</h5>
+                </div>
+                <div class="flex flex-column"><div class="img"></div></div>
+            </slide>
+            <slide class="s-c_card flex flex-column" :index="3">
+                <div class="title-big">
+                    <h3>X-Trail <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="title-small">
+                    <h5>X-Trail</h5>
+                </div>
+                <div class="flex flex-column"><div class="img"></div></div>
+            </slide>
+            <slide class="s-c_card flex flex-column" :index="4">
+                <div class="title-big">
+                    <h3>Almera <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="title-small">
+                    <h5>Almera</h5>
+                </div>
+                <div class="flex flex-column"><div class="img"></div></div>
+            </slide>
+        </carousel-3d>
     </div>
-    <div class="container">
-        <div class="glide" style="background-color: black">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">0</li>
-                    <li class="glide__slide">1</li>
-                    <li class="glide__slide">2</li>
-                </ul>
-            </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-            </div>
-        </div>
     </div>
--->
     <!-- ***************************************************************************************New-car -->
     <div class="new-car-block nav-block container-fluid">
         <div class="container">
-            <div class="title-block row" style="padding-top: 71px;">
+            <div class="title-block row">
                 <h3>Новые автомобили в наличии</h3>
                 <a href="#">Все 550 новых автомобилей в наличии</a>
             </div>
@@ -796,8 +799,9 @@
     <!-- bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/javascript/bootstrap/bootstrap.min.js"></script>
-    <!-- glide -->
-    <script type="text/javascript" src="./assets/javascript/glide/glide.min.js"></script>
+    <!-- vue -->
+    <script type="text/javascript" src="./assets/javascript/vue-carousel-3d/vue.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/vue-carousel-3d/vue-carousel-3d.min.js"></script>
     <!-- slick -->
     <script type="text/javascript" src="./assets/javascript/slick/slick.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/scripts.js"></script>

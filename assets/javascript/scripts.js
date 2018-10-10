@@ -5,32 +5,34 @@ $('.m-slider').slick({
 });
 
 
-$('.slider-carousel').on('init', function () {
-    console.log($(".slider-carousel .s-c_card.slick-center").index());
-    $(".slider-carousel .s-c_card").removeClass("slide-left slide-right");
-    $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-center").index() - 1).addClass("slide-left");
-    $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-center").index() + 1).addClass("slide-right");
-});
-$('.slider-carousel').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    
-    if (currentSlide != nextSlide) {
-        console.log(currentSlide + " " + nextSlide);
-        $(".slider-carousel .s-c_card").removeClass("slide-left slide-right");
-        $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-active.slick-center").index() - 1).addClass("slide-left");
-        $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-active.slick-center").index() + 1).addClass("slide-right");
-    }
-});
+//$('.slider-carousel').on('init', function () {
+//    console.log($(".slider-carousel .s-c_card.slick-center").index());
+//    $(".slider-carousel .s-c_card").removeClass("slide-left slide-right");
+//    $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-center").index() - 1).addClass("slide-left");
+//    $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-center").index() + 1).addClass("slide-right");
+//});
+//$('.slider-carousel').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+//    
+//    if (currentSlide != nextSlide) {
+//        console.log(currentSlide + " " + nextSlide);
+//        $(".slider-carousel .s-c_card").removeClass("slide-left slide-right");
+//        $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-active.slick-center").index() - 1).addClass("slide-left");
+//        $(".slider-carousel .s-c_card").eq($(".slider-carousel .s-c_card.slick-active.slick-center").index() + 1).addClass("slide-right");
+//    }
+//});
+//
+//$('.slider-carousel').slick({
+//    infinite: true,
+//    initialSlide: 1,
+//    centerMode: true,
+//    draggable: false,
+//    slidesToShow: 1,
+//    variableWidth: true,
+//    slidesToScroll: 1
+//
+//});
 
-$('.slider-carousel').slick({
-    infinite: true,
-    initialSlide: 1,
-    centerMode: true,
-    draggable: false,
-    slidesToShow: 1,
-    variableWidth: true,
-    slidesToScroll: 1
 
-});
 //$('.slider-carousel').slick({
 //    infinite: true, 
 //  centerMode: true,
@@ -81,3 +83,13 @@ $('.slider-carousel').slick({
 //});
 //
 //glide.mount();
+new Vue({
+  el: '#slider-carousel',
+  data: {
+    slides: 5
+  },
+  components: {
+    'carousel-3d': Carousel3d.Carousel3d,
+    'slide': Carousel3d.Slide
+  }
+})

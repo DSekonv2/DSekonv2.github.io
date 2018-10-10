@@ -873,6 +873,7 @@ textarea {
 /*-- SliderCarousel --*/
 
 .slider-carousel-block {
+    height: 760px;
     background-image: url("../images/bg-caurosel.png");
     background-position: center top;
     background-repeat: no-repeat;
@@ -883,28 +884,33 @@ textarea {
     transition: all 0.5s;
 }
 
-.slider-carousel .slick-prev,
-.slider-carousel .slick-next {
-    position: absolute;
-    top: 50%;
-    width: 98px;
-    height: 98px;
-    color: transparent;
+.slider-carousel-block .carousel-3d-container {
+    margin: 0 auto !important;
+}
+.slider-carousel {
+    padding-top: 70px;
+}
+.slider-carousel .carousel-3d-controls {
+    top: 63.75%!important;
+}
+.slider-carousel .carousel-3d-controls a > span {
+    display: none;
+}
+.slider-carousel .carousel-3d-controls a {
     background-color: rgba(252, 252, 252, 0.3);
     border: 0;
     z-index: 1;
 }
 
-.slider-carousel .slick-prev {
-    left: 210px;
+.slider-carousel .prev {
+    left: 210px !important;
 }
 
-.slider-carousel .slick-next {
-    right: 210px;
+.slider-carousel .next {
+    right: 210px !important;
 }
 
-.slider-carousel .slick-prev::before,
-.slider-carousel .slick-next::before {
+.slider-carousel .carousel-3d-controls a::before {
     content: '';
     position: absolute;
     top: 10px;
@@ -915,8 +921,7 @@ textarea {
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 1, 0.3);
 }
 
-.slider-carousel .slick-prev::after,
-.slider-carousel .slick-next::after {
+.slider-carousel .carousel-3d-controls a::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -929,28 +934,13 @@ textarea {
     transform: translate(-50%, -50%) rotate(-90deg);
 }
 
-.slider-carousel .slick-prev::after {
+.slider-carousel .carousel-3d-controls .prev::after {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.slider-carousel .slick-prev:active,
-.slider-carousel .slick-prev:focus,
-.slider-carousel .slick-next:active,
-.slider-carousel .slick-next:focus {
+.slider-carousel .carousel-3d-controls a {
     color: transparent;
     border: 0;
-}
-
-.s-c_card.slick-active.slick-center {
-    transform: translateX(0px);
-}
-
-.s-c_card.slide-left {
-    transform: translateX(155px);
-}
-
-.s-c_card.slide-right {
-    transform: translateX(-155px);
 }
 
 .s-c_card {
@@ -958,6 +948,8 @@ textarea {
     justify-content: flex-end;
     width: 630px;
     min-height: 500px;
+    background-color: transparent !important;
+    border: 0px !important;
     transform: translateX(0px);
     transition: all 0.5s;
 }
@@ -965,14 +957,15 @@ textarea {
 .title-big {
     position: relative;
     display: none;
+    padding-bottom: 40px;
     color: #191919;
 }
 
-.s-c_card.slick-active.slick-center .title-big {
+.s-c_card.current .title-big {
     display: block;
 }
 
-.s-c_card.slick-active.slick-center .title-small {
+.s-c_card.current .title-small {
     display: none;
 }
 
@@ -1016,44 +1009,76 @@ textarea {
     height: 13px;
     background-image: url("../images/icons/ic_plus.svg");
 }
-
 .title-small {
+    padding-bottom: 38px;
+    width: 286px;
     text-align: center;
 }
-
 .title-small h5 {
     display: inline-block;
     font-size: 16px;
     color: #7d7d7d;
     text-align: left;
 }
-
+.s-c_card.right-1 .title-small h5 {
+    padding-left: 48px;
+}
+.s-c_card.left-1 .title-small h5 {
+    padding-left: 453px;
+}
 .title-small h5 span {
     display: block;
 }
 
 .s-c_card .flex {
-    padding: 0 165px;
     height: 280px;
     align-items: center;
+    transition: all 0.5s;
 }
 
-.s-c_card.slick-active.slick-center .flex {
+.s-c_card.right-1 .flex {
+    margin-bottom: -20px;
+    padding-right: 270px;
+}
+
+.s-c_card.left-1 .flex {
+    margin-bottom: -26px;
+    padding-left: 252px;
+}
+
+.s-c_card.current .flex {
     padding: 0 40px;
-    height: 380px;
+    height: 324px;
 }
 
-.s-c_card.slick-active.slick-center .flex img {
+.s-c_card .img {
     width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.s-c_card .flex > img {
-    width: auto;
+.s-c_card:nth-of-type(1) .img {
+    background-image: url("../images/page_index/carousel-2/juke.png");
+}
+.s-c_card:nth-of-type(2) .img {
+    background-image: url("../images/page_index/carousel-2/murano.png");
+}
+.s-c_card:nth-of-type(3) .img {
+    background-image: url("../images/page_index/carousel-2/qashqai.png");
+}
+.s-c_card:nth-of-type(4) .img {
+    background-image: url("../images/page_index/carousel-2/x-trail.png");
+}
+.s-c_card:nth-of-type(5) .img {
+    background-image: url("../images/page_index/carousel-2/almera.png");
 }
 
 /*-- NewCar --*/
 
 .new-car-block {
+    margin-top: -53px;
     padding-bottom: 71px;
 }
 
