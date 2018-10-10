@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nissan</title>
+    <!-- bootstrap -->
+    <link href="./assets/stylesheet/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- glide -->
+    <link href="./assets/stylesheet/glide/glide.core.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/stylesheet/glide/glide.theme.min.css" rel="stylesheet" type="text/css">
+    <!-- slick -->
+    <link href="./assets/stylesheet/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="./assets/stylesheet/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--
+    <header style="background-color: rgba(0,0,0, 0.8)">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-xl-1"><a href="#"><img src="./assets/images/logos/logo-nissan-header.png" alt=""></a></div>
+                <div class="menu-dark col-xl-11">
+                    <div class="menu-dark_top">
+                        <ul class="menu-dark_top__line">
+                            <li class="red-arrow-down">Санкт-Петербург</li>
+                            <li class="address">Выборгское ш., 27, к.1, лит. А</li>
+                            <li class="phone-number">+7 (812) 2103-716</li>
+                            <li class="profile">Вход в личный кабинет</li>
+                            <li class="logo-marka"><img src="./assets/images/logos/logo-marka.png" alt=""></li>
+                        </ul>
+                        <a href="#" class="red-button">Заказать звонок</a>
+                    </div>
+                    <div class="menu-dark_bottom">
+                        <ul>
+                            <li class="red-arrow-down">Покупка</li>
+                            <li class="red-arrow-down">Обслуживание</li>
+                            <li class="red-arrow-down">Специальные предложения</li>
+                            <li class="red-arrow-down">Кредитование и страхование</li>
+                            <li class="red-arrow-down">О компании</li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+-->
+    <header style="position: absolute; z-index: 1">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="logo col-xl-1 navbar-brand" href="#"><img src="./assets/images/logos/logo-nissan-header.png" alt=""></a>
+                <div class="menu-dark col-xl-11">
+                    <div class="menu-dark_top collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="menu-dark_top__line navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="red-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Санкт-Петербург
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Test</a>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </div>
+                            </li>
+                            <li class="address nav-item">
+                                <a class="nav-link" href="#">Выборгское ш., 27, к.1, лит. А</a>
+                            </li>
+                            <li class="phone-number nav-item">
+                                <a class="nav-link" href="#">+7 (812) 2103-716</a>
+                            </li>
+                            <li class="profile nav-item">
+                                <a class="nav-link" href="#">Вход в личный кабинет</a>
+                            </li>
+                            <li class="logo-marka nav-item">
+                                <img src="./assets/images/logos/logo-marka.png" alt="">
+                            </li>
+                        </ul>
+                        <a href="#" class="red-button">Заказать звонок</a>
+                    </div>
+                    <div class="menu-dark_bottom collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <button class="red-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Покупка
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Test</a>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </div>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="red-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Обслуживание
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Test</a>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="red-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Специальные предложения
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Test</a>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="red-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Кредитование и страхование
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Test</a>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="red-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    О компании
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Test</a>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ***************************************************************************************SliderMain -->
+    <div id="carouselIndicators" class="slider-main carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./assets/images/page_index/carousel-1/murano.png" alt="Первый слайд">
+                <div class="gradient-left"></div>
+                <div class="gradient-right"></div>
+                <div class="gradient-top"></div>
+                <div class="slide-item-container s-i-container_murano flex flex-column container">
+                    <h3>Nissan murano</h3>
+                    <h4>жизнь набирает высоту</h4>
+                    <p>Выгода <span>до <span class="red">400 000</span> руб.</span></p>
+                    <a href="#"><span>Узнать больше</span></a>
+                    <img class="logo-im" src="./assets/images/logos/logo-nissan-IM-white.svg" alt="">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/page_index/carousel-1/almera.png" alt="Второй слайд">
+                <div class="gradient-left"></div>
+                <div class="gradient-right"></div>
+                <div class="gradient-top"></div>
+                <div class="slide-item-container s-i-container_almera flex flex-column container">
+                    <h3>Nissan almera</h3>
+                    <p>Выгода <span>до <span class="red">100 000</span> руб.</span></p>
+                    <a href="#"><span>Узнать больше</span></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/page_index/carousel-1/qashqai.png" alt="Третий слайд">
+                <div class="gradient-left"></div>
+                <div class="gradient-right"></div>
+                <div class="gradient-top"></div>
+                <div class="slide-item-container s-i-container_qashqai flex flex-column container">
+                    <h3>Nissan qashqai</h3>
+                    <h4>Больше уверенности <span>с яндекс.авто</span></h4>
+                    <a href="#"><span>Узнать больше</span></a>
+                    <p class="credit">Кредит <span>от <span class="percent">0%</span></span>
+                    </p>
+                    <p class="price">Будь в плюсе <span>до <span class="red">140 000</span> руб.</span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/page_index/carousel-1/x-trail.png" alt="Третий слайд">
+                <div class="gradient-left"></div>
+                <div class="gradient-right"></div>
+                <div class="gradient-top"></div>
+                <div class="slide-item-container s-i-container_x-trail flex flex-column container">
+                    <h3>Nissan x-trail</h3>
+                    <h4>Больше уверенности <span>с яндекс.авто</span></h4>
+                    <a href="#"><span>Узнать больше</span></a>
+                    <p class="price">Будь в плюсе <span>до <span class="red">300 000</span> руб.</span></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <div class="menu-bottom_container container">
+            <ul class="flex">
+                <li>
+                    <div class="fake-arrow center"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="flex">
+                            <div class="num">158</div>
+                            <p>новых автомобилей <span>в наличии</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="flex">
+                            <div class="num">107</div>
+                            <p>автомобилей с пробегом <span>в наличии</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="flex">
+                            <div class="ic_pick"></div>
+                            <p>подобрать автомобиль <span>по параметрам</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="flex">
+                            <div class="ic_record"></div>
+                            <p>Записаться на сервис</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ***************************************************************************************SliderCarousel -->
+    <div class="slider-carousel-block container-fluid">
+        <div class="container">
+            <div class="slider-carousel">
+                <div class="s-c_card flex flex-column">
+                    <div class="title-big">
+                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <h5>Обновленный <span>Juke CVT</span></h5>
+                    </div>
+                    <div class="flex flex-column"><img src="./assets/images/page_index/carousel-2/juke.png" alt=""></div>
+                </div>
+                <div class="s-c_card flex flex-column">
+                    <div class="title-big">
+                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <h5>Обновленный Juke CVT</h5>
+                    </div>
+                    <div class="flex flex-column"><img src="./assets/images/page_index/carousel-2/juke.png" alt=""></div>
+                </div>
+                <div class="s-c_card flex flex-column">
+                    <div class="title-big">
+                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <h5>Обновленный Juke CVT</h5>
+                    </div>
+                    <div class="flex flex-column"><img src="./assets/images/page_index/carousel-2/juke.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+<!--
+    </div>
+    <div class="container">
+        <div class="glide" style="background-color: black">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">0</li>
+                    <li class="glide__slide">1</li>
+                    <li class="glide__slide">2</li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- ***************************************************************************************New-car -->
+    <div class="new-car-block nav-block container-fluid">
+        <div class="container">
+            <div class="title-block row" style="padding-top: 71px;">
+                <h3>Новые автомобили в наличии</h3>
+                <a href="#">Все 550 новых автомобилей в наличии</a>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav col-xl-12">
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Модель
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Коробка передач
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Комплектация
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Цвет
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-3-custom flex">
+                        <input class="form-control col-xl-3_1-custom" type="text" placeholder="Цена от" aria-label="Цена от">
+                        <input class="form-control col-xl-3_1-custom" type="text" placeholder="до" aria-label="Цена от">
+                        <button class="btn col-xl-3_2-custom" type="button">Подобрать автомобиль</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nc-cardss container">
+            <div class="row">
+                <div class="nc-card flex flex-column col-xl-4">
+                    <div class="nc-card_top flex flex-column">
+                        <div class="flex flex-column"><img src="./assets/images/cars_new/almera.png" alt=""></div>
+                        <h5 class="nc-card_top__name">NISSAN almera</h5>
+                        <h5 class="nc-card_top__price">430 000 руб.</h5>
+                    </div>
+                    <a class="nc-card_bottom" href="#">
+                        <div class="vertical-center">Еще <span class="nc-c_b__number">75</span> <span class="nc-c_b__name">Almera</span> С ПТС в наличии</div>
+                    </a>
+                </div>
+                <div class="nc-card flex flex-column col-xl-4">
+                    <div class="nc-card_top flex flex-column">
+                        <div class="flex flex-column"><img src="./assets/images/cars_new/terrano.png" alt=""></div>
+                        <h5 class="nc-card_top__name">NISSAN terrano</h5>
+                        <h5 class="nc-card_top__price">430 000 руб.</h5>
+                    </div>
+                    <a class="nc-card_bottom" href="#">
+                        <div class="vertical-center">Еще <span class="nc-c_b__number">75</span> <span class="nc-c_b__name">Terrano</span> С ПТС в наличии</div>
+                    </a>
+                </div>
+                <div class="nc-card flex flex-column col-xl-4">
+                    <div class="nc-card_top flex flex-column">
+                        <div class="flex flex-column"><img src="./assets/images/cars_new/juke.png" alt=""></div>
+                        <h5 class="nc-card_top__name">nissan JUKE</h5>
+                        <h5 class="nc-card_top__price">430 000 руб.</h5>
+                    </div>
+                    <a class="nc-card_bottom" href="#">
+                        <div class="vertical-center">Еще <span class="nc-c_b__number">75</span> <span class="nc-c_b__name">Juke</span> С ПТС в наличии</div>
+                    </a>
+                </div>
+                <div class="nc-card flex flex-column col-xl-4">
+                    <div class="nc-card_top flex flex-column">
+                        <div class="flex flex-column"><img src="./assets/images/cars_new/qashqai.png" alt=""></div>
+                        <h5 class="nc-card_top__name">NISSAN qashqai</h5>
+                        <h5 class="nc-card_top__price">430 000 руб.</h5>
+                    </div>
+                    <a class="nc-card_bottom" href="#">
+                        <div class="vertical-center">Еще <span class="nc-c_b__number">75</span> <span class="nc-c_b__name">Qashqai</span> С ПТС в наличии</div>
+                    </a>
+                </div>
+                <div class="nc-card flex flex-column col-xl-4">
+                    <div class="nc-card_top flex flex-column">
+                        <div class="flex flex-column">
+                            <div><img src="./assets/images/cars_new/x_trail.png" alt=""></div>
+                        </div>
+                        <h5 class="nc-card_top__name">NISSAN x-trail</h5>
+                        <h5 class="nc-card_top__price">430 000 руб.</h5>
+                    </div>
+                    <a class="nc-card_bottom" href="#">
+                        <div class="vertical-center">Еще <span class="nc-c_b__number">75</span> <span class="nc-c_b__name">X-Trail</span> С ПТС в наличии</div>
+                    </a>
+                </div>
+                <div class="nc-card flex flex-column col-xl-4">
+                    <div class="nc-card_top flex flex-column">
+                        <div class="flex flex-column"><img src="./assets/images/cars_new/murano.png" alt=""></div>
+                        <h5 class="nc-card_top__name">NISSAN murano</h5>
+                        <h5 class="nc-card_top__price">430 000 руб.</h5>
+                    </div>
+                    <a class="nc-card_bottom" href="#">
+                        <div class="vertical-center">Еще <span class="nc-c_b__number">75</span> <span class="nc-c_b__name">Murano</span> С ПТС в наличии</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***************************************************************************************Mileage -->
+    <div class="mileage-block nav-block container-fluid">
+        <div class="container">
+            <div class="title-block row">
+                <h3>Новые автомобили в наличии</h3>
+                <a href="#">Все 550 новых автомобилей в наличии</a>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav col-xl-12">
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Марка
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Модель
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-2-custom">
+                        <button class="gray-arrow nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Цвет
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown col-xl-6-custom flex">
+                        <input class="form-control col-xl-6_1-custom" type="text" placeholder="Цена от" aria-label="Цена от">
+                        <input class="form-control col-xl-6_1-custom" type="text" placeholder="до" aria-label="Цена от">
+                        <input class="form-control col-xl-6_1-custom" type="text" placeholder="Пробег от" aria-label="Цена от">
+                        <input class="form-control col-xl-6_1-custom" type="text" placeholder="до" aria-label="Цена от">
+                        <button class="btn col-xl-6_2-custom" type="button">Подобрать автомобиль</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="m-cardss container">
+            <div class="m-slider row">
+                <div class="col-xl-3">
+                    <div class="m-card">
+                        <div class="m-card_img"><img src="./assets/images/cars_mileage/juke_I.png" alt=""></div>
+                        <div class="m-card_description">
+                            <h5 class="m-c_desc__name">NISSAN JUKE I</h5>
+                            <p class="m-c_desc__city">Санкт-Петербург</p>
+                            <div class="m-c_desc-block__price">
+                                <h5 class="m-c_desc__price">430 000 руб.</h5>
+                                <h5 class="m-c_desc__credit">10 000 руб. в месяц</h5>
+                            </div>
+                            <div class="m-c_desc__info">
+                                <p class="m-c_desc__info-km">96 000км</p>
+                                <p class="m-c_desc__info-year">2011 г.в.</p>
+                            </div>
+                        </div>
+                        <a class="m-card_more">Подробнее</a>
+                        <a class="m-card_offer">Получить персональное предложение</a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="m-card">
+                        <div class="m-card_img"><img src="./assets/images/cars_mileage/juke_I.png" alt=""></div>
+                        <div class="m-card_description">
+                            <h5 class="m-c_desc__name">NISSAN JUKE I</h5>
+                            <p class="m-c_desc__city">Санкт-Петербург</p>
+                            <h5 class="m-c_desc__price">430 000 руб.</h5>
+                            <h5 class="m-c_desc__credit">10 000 руб. в месяц</h5>
+                            <div class="m-c_desc__info">
+                                <p class="m-c_desc__info-km">96 000км</p>
+                                <p class="m-c_desc__info-year">2011 г.в.</p>
+                            </div>
+                        </div>
+                        <a class="m-card_more">Подробнее</a>
+                        <a class="m-card_offer">Получить персональное предложение</a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="m-card">
+                        <div class="m-card_img"><img src="./assets/images/cars_mileage/juke_I.png" alt=""></div>
+                        <div class="m-card_description">
+                            <h5 class="m-c_desc__name">NISSAN JUKE I</h5>
+                            <p class="m-c_desc__city">Санкт-Петербург</p>
+                            <h5 class="m-c_desc__price">430 000 руб.</h5>
+                            <h5 class="m-c_desc__credit">10 000 руб. в месяц</h5>
+                            <div class="m-c_desc__info">
+                                <p class="m-c_desc__info-km">96 000км</p>
+                                <p class="m-c_desc__info-year">2011 г.в.</p>
+                            </div>
+                        </div>
+                        <a class="m-card_more">Подробнее</a>
+                        <a class="m-card_offer">Получить персональное предложение</a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="m-card">
+                        <div class="m-card_img"><img src="./assets/images/cars_mileage/juke_I.png" alt=""></div>
+                        <div class="m-card_description">
+                            <h5 class="m-c_desc__name">NISSAN JUKE I</h5>
+                            <p class="m-c_desc__city">Санкт-Петербург</p>
+                            <h5 class="m-c_desc__price">430 000 руб.</h5>
+                            <h5 class="m-c_desc__credit">10 000 руб. в месяц</h5>
+                            <div class="m-c_desc__info">
+                                <p class="m-c_desc__info-km">96 000км</p>
+                                <p class="m-c_desc__info-year">2011 г.в.</p>
+                            </div>
+                        </div>
+                        <a class="m-card_more">Подробнее</a>
+                        <a class="m-card_offer">Получить персональное предложение</a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="m-card">
+                        <div class="m-card_img"><img src="./assets/images/cars_mileage/juke_I.png" alt=""></div>
+                        <div class="m-card_description">
+                            <h5 class="m-c_desc__name">NISSAN JUKE I</h5>
+                            <p class="m-c_desc__city">Санкт-Петербург</p>
+                            <h5 class="m-c_desc__price">430 000 руб.</h5>
+                            <h5 class="m-c_desc__credit">10 000 руб. в месяц</h5>
+                            <div class="m-c_desc__info">
+                                <p class="m-c_desc__info-km">96 000км</p>
+                                <p class="m-c_desc__info-year">2011 г.в.</p>
+                            </div>
+                        </div>
+                        <a class="m-card_more">Подробнее</a>
+                        <a class="m-card_offer">Получить персональное предложение</a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="m-card">
+                        <div class="m-card_img"><img src="./assets/images/cars_mileage/juke_I.png" alt=""></div>
+                        <div class="m-card_description">
+                            <h5 class="m-c_desc__name">NISSAN JUKE I</h5>
+                            <p class="m-c_desc__city">Санкт-Петербург</p>
+                            <h5 class="m-c_desc__price">430 000 руб.</h5>
+                            <h5 class="m-c_desc__credit">10 000 руб. в месяц</h5>
+                            <div class="m-c_desc__info">
+                                <p class="m-c_desc__info-km">96 000км</p>
+                                <p class="m-c_desc__info-year">2011 г.в.</p>
+                            </div>
+                        </div>
+                        <a class="m-card_more">Подробнее</a>
+                        <a class="m-card_offer">Получить персональное предложение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************************************************************************Special -->
+    <div class="special-block container-fluid">
+        <div class="container">
+            <div class="title-block row">
+                <h3>Специальные предложения</h3>
+                <a href="#">Все предложения</a>
+            </div>
+        </div>
+        <div class="sb_car-container container-fluid">
+            <div class="container">
+                <div class="sb_car row">
+                    <div class="sb_car-1 col-xl-6">
+                        <div class="img">
+                            <h4 class="sb_car__h-top">nissan murano</h4>
+                            <h4 class="sb_car__h-bottom">жизнь набирает высоту</h4>
+                            <p class="sb_car__price">Выгода до <span class="red">400 000</span> руб.</p>
+                            <img src="./assets/images/logos/logo-nissan-IM-white.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="sb_car__block col-xl-6">
+                        <div class="sb_car-2 col-xl-12">
+                            <div class="img">
+                                <h4 class="sb_car__h-top">nissan almera</h4>
+                                <p class="sb_car__price">Выгода до <span class="red">140 000</span> руб.</p>
+                            </div>
+                        </div>
+                        <div class="sb_car-3 col-xl-12">
+                            <div class="img">
+                                <h4 class="sb_car__h-top">nissan x-trail</h4>
+                                <p class="sb_car__price">будь в плюсе <span>до <span class="red">300 000</span> руб.</span></p>
+                                <img src="./assets/images/logos/logo-nissan-IM-black.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***************************************************************************************Subscription -->
+        <div class="subscription-block container-fluid">
+            <div>
+                <div class="sub-top container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <h3 class="vertical-center">Следите за нами <span>в социальных сетях</span></h3>
+                            </div>
+                            <div class="sub-top_social col-xl-2">
+                                <div class="center">
+                                    <div class="img-container"><img class="fb center" src="./assets/images/icons/ic_social_fb.svg" alt=""></div>
+                                    <h5>Facebook</h5>
+                                </div>
+                            </div>
+                            <div class="sub-top_social col-xl-2">
+                                <div class="center">
+                                    <div class="img-container"><img class="vk  center" src="./assets/images/icons/ic_social_vk.svg" alt=""></div>
+                                    <h5>Вконтакте</h5>
+                                </div>
+                            </div>
+                            <div class="sub-top_social col-xl-2">
+                                <div class="center">
+                                    <div class="img-container"><img class="instagram center" src="./assets/images/icons/ic_social_instagram.svg" alt=""></div>
+                                    <h5>Instagram</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-bottom container-fluid">
+                    <div class="gb-black"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="sub-bottom_text vertical-center">
+                                    <h3>Подпишитесь <span>на рассылку</span></h3>
+                                    <p>Узнайте первыми о новых <span>спецпредложениях и новостях</span></p>
+                                </div>
+                            </div>
+                            <div class="form-container col-xl-6">
+                                <form class="sub-bottom_form" action="#" method="post">
+                                    <input type="email" aria-label="email" name="email" value placeholder="Ваш Email *">
+                                    <button type="submit" aria-label="Подписаться">
+                                        <div>Подписаться</div>
+                                    </button>
+                                    <div class="consent-block">
+                                        <img src="./assets/images/reCAPTCHA-fake.png" alt="Заменится" style="margin-right: 24px;width: 224px;height: 60px;">
+                                        <div class="consent">
+                                            <input class="service-control" type="checkbox" id="checkConsent" class="checkbox-custom">
+                                            <label for="checkConsent">
+                                                <p>Нажимая на кнопку “Подписаться”, Вы даете согласие на <a href="#">обработку персональных данных</a> и <a href="#">коммуникацию</a></p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***************************************************************************************Footer -->
+    <footer>
+        <div class="footer-top container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h5>Модельный ряд</h5>
+                    <ul>
+                        <li><a href="#">Almera</a></li>
+                        <li><a href="#">Terrano</a></li>
+                        <li><a href="#">Обновлённый Juke CV</a></li>
+                        <li><a href="#">Juke</a></li>
+                        <li><a href="#">Qashqai</a></li>
+                        <li><a href="#">X-Trail</a></li>
+                        <li><a href="#">Murano</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <h5>Покупка</h5>
+                    <ul>
+                        <li><a href="#">Новые автомобили</a></li>
+                        <li><a href="#">Автомобили с пробегом</a></li>
+                    </ul>
+                    <h5>Обслуживание</h5>
+                    <ul>
+                        <li><a href="#">Сервис Nissan</a></li>
+                        <li><a href="#">Запись на сервис</a></li>
+                        <li><a href="#">Кузовной ремонт</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Запасные части и аксессуары</a></li>
+                        <li><a href="#">Корпоративное обслуживание</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <h5>О компании</h5>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Почему МАРКА?</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <h5>Специальные предложения</h5>
+                    <ul>
+                        <li><a href="#">Специальные предложения на покупку Nisan</a></li>
+                        <li><a href="#">Специальные предложения на сервис Nissan</a></li>
+                        <li><a href="#">Специальные программы Nissan</a></li>
+                    </ul>
+                    <h5>Кредитование и страхование</h5>
+                    <ul>
+                        <li><a href="#">Кредитование</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                        <li><a href="#">Страхование</a></li>
+                    </ul>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-marka-white col-xl-3">
+                        <img src="./assets/images/logos/logo-marka-white.png" alt="">
+                        <ul>
+                            <li>Санкт-Петербург</li>
+                            <li>Казань</li>
+                            <li>Вологда</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="menu-footer">
+                            <li class="address">Выборгское ш., 27, к.1, лит. А</li>
+                            <li class="phone-number">+7 (812) 2103-716</li>
+                            <li class="profile">Вход в личный кабинет</li>
+                        </ul>
+                    </div>
+                    <div class="social col-xl-2 offset-xl-1">
+                        <a href="#" class="fb"><img class="center" src="./assets/images/icons/ic_social_fb.svg" alt=""></a>
+                        <a href="#" class="vk"><img class="center" src="./assets/images/icons/ic_social_vk.svg" alt=""></a>
+                        <a href="#" class="instagram"><img class="center" src="./assets/images/icons/ic_social_instagram.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="logo-nissan-footer col-xl-3"><img src="./assets/images/logos/logo-nissan-footer.svg" alt=""></div>
+                <div class="col-xl-6">
+                    <p>© 2018 АВТОЦЕНТР «МАРКА» — официальный дилер Nissan в Санкт-Петербурге. Данный сайт носит информационно-справочный характер, не является публичной офертой. Изображения автомобилей на сайте представлены для ознакомления и могут отличаться от автомобилей реализуемых дилерами. Более подробную и актуальную информацию можно получить у официального дилера Nissan.</p>
+                </div>
+                <div class="footer-logo-block col-xl-3">
+                    <img class="logo-parcom" src="./assets/images/logos/logo-parcom.png" alt="">
+                    <div class="logo-finik">
+                        <div>Сделано в</div>
+                        <img src="./assets/images/logos/logo-finik.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="./assets/javascript/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/javascript/bootstrap/bootstrap.min.js"></script>
+    <!-- glide -->
+    <script type="text/javascript" src="./assets/javascript/glide/glide.min.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="./assets/javascript/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/scripts.js"></script>
+</body>
+
+</html>
