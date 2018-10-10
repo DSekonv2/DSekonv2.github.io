@@ -17,37 +17,6 @@
 </head>
 
 <body>
-    <!--
-    <header style="background-color: rgba(0,0,0, 0.8)">
-        <div class="container">
-            <div class="row">
-                <div class="logo col-xl-1"><a href="#"><img src="./assets/images/logos/logo-nissan-header.png" alt=""></a></div>
-                <div class="menu-dark col-xl-11">
-                    <div class="menu-dark_top">
-                        <ul class="menu-dark_top__line">
-                            <li class="red-arrow-down">Санкт-Петербург</li>
-                            <li class="address">Выборгское ш., 27, к.1, лит. А</li>
-                            <li class="phone-number">+7 (812) 2103-716</li>
-                            <li class="profile">Вход в личный кабинет</li>
-                            <li class="logo-marka"><img src="./assets/images/logos/logo-marka.png" alt=""></li>
-                        </ul>
-                        <a href="#" class="red-button">Заказать звонок</a>
-                    </div>
-                    <div class="menu-dark_bottom">
-                        <ul>
-                            <li class="red-arrow-down">Покупка</li>
-                            <li class="red-arrow-down">Обслуживание</li>
-                            <li class="red-arrow-down">Специальные предложения</li>
-                            <li class="red-arrow-down">Кредитование и страхование</li>
-                            <li class="red-arrow-down">О компании</li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
--->
     <header style="position: absolute; z-index: 1">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -246,61 +215,75 @@
     </div>
 
     <!-- ***************************************************************************************SliderCarousel -->
-<div class="slider-carousel-block container-fluid">
-    <div id="slider-carousel" class="slider-carousel container">
-        <carousel-3d :autoplay="true" :autoplay-timeout="7000" :controls-visible="true" :controls-width="98" :controls-height="98" :perspective="0" :space="550" :width="630" :height="500" :display="3">
-            <slide class="s-c_card flex flex-column" :index="0">
-                <div class="title-big">
-                    <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                    <a href="#">Узнать подробнее</a>
-                </div>
-                <div class="title-small">
-                    <h5>Обновленный <span>Juke CVT</span></h5>
-                </div>
-                <div class="flex flex-column"><div class="img"></div></div>
-            </slide>
-            <slide class="s-c_card flex flex-column" :index="1">
-                <div class="title-big">
-                    <h3>Murano <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                    <a href="#">Узнать подробнее</a>
-                </div>
-                <div class="title-small">
-                    <h5>Murano</h5>
-                </div>
-                <div class="flex flex-column"><div class="img"></div></div>
-            </slide>
-            <slide class="s-c_card flex flex-column" :index="2">
-                <div class="title-big">
-                    <h3>Qashqai <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                    <a href="#">Узнать подробнее</a>
-                </div>
-                <div class="title-small">
-                    <h5>Qashqai</h5>
-                </div>
-                <div class="flex flex-column"><div class="img"></div></div>
-            </slide>
-            <slide class="s-c_card flex flex-column" :index="3">
-                <div class="title-big">
-                    <h3>X-Trail <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                    <a href="#">Узнать подробнее</a>
-                </div>
-                <div class="title-small">
-                    <h5>X-Trail</h5>
-                </div>
-                <div class="flex flex-column"><div class="img"></div></div>
-            </slide>
-            <slide class="s-c_card flex flex-column" :index="4">
-                <div class="title-big">
-                    <h3>Almera <span>от <span class="price">1 154 000</span> руб.</span></h3>
-                    <a href="#">Узнать подробнее</a>
-                </div>
-                <div class="title-small">
-                    <h5>Almera</h5>
-                </div>
-                <div class="flex flex-column"><div class="img"></div></div>
-            </slide>
-        </carousel-3d>
-    </div>
+    <div class="slider-carousel-block container-fluid">
+        <div id="slider-carousel" class="slider-carousel container">
+            <carousel-3d class="carousel-3d":autoplay="true" :autoplay-timeout="7000" :controls-visible="true" :controls-width="98" :controls-height="98" :perspective="0" :space="550" :width="630" :height="500" :display="3" @before-slide-change="onBeforeSlideChange">
+                <slide class="s-c_card flex flex-column" :index="0">
+                    <div class="title-big">
+                        <h3>Juke CVT <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <div><h5>Обновленный <span>Juke CVT</span></h5></div>
+                    </div>
+                    <div class="flex flex-column">
+                        <div class="img"></div>
+                    </div>
+                </slide>
+                <slide class="s-c_card flex flex-column" :index="1">
+                    <div class="title-big">
+                        <h3>Murano <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <div><h5>Murano</h5></div>
+                    </div>
+                    <div class="flex flex-column">
+                        <div class="img"></div>
+                    </div>
+                </slide>
+                <slide class="s-c_card flex flex-column" :index="2">
+                    <div class="title-big">
+                        <h3>Qashqai <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <div><h5>Qashqai</h5></div>
+                    </div>
+                    <div class="flex flex-column">
+                        <div class="img"></div>
+                    </div>
+                </slide>
+                <slide class="s-c_card flex flex-column" :index="3">
+                    <div class="title-big">
+                        <h3>X-Trail <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <div><h5>X-Trail</h5></div>
+                    </div>
+                    <div class="flex flex-column">
+                        <div class="img"></div>
+                    </div>
+                </slide>
+                <slide class="s-c_card flex flex-column" :index="4">
+                    <div class="title-big">
+                        <h3>Almera <span>от <span class="price">1 154 000</span> руб.</span></h3>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="title-small">
+                        <div><h5>Almera</h5></div>
+                    </div>
+                    <div class="flex flex-column">
+                        <div class="img"></div>
+                    </div>
+                </slide>
+            </carousel-3d>
+            <div class="counter-carousel flex">
+                <div class="counter-carousel_current">1</div>
+                <div class="counter-carousel_general">7</div>
+            </div>
+        </div>
     </div>
     <!-- ***************************************************************************************New-car -->
     <div class="new-car-block nav-block container-fluid">

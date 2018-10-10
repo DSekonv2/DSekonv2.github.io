@@ -482,6 +482,15 @@ textarea {
     padding-top: 22.5px;
     padding-bottom: 22.5px;
 }
+.menu-dark_top__line li:first-of-type {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-expand-lg .menu-dark_top .navbar-nav button.nav-link {
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+}
 
 .logo-marka {
     line-height: 56px;
@@ -514,9 +523,13 @@ textarea {
 .menu-dark .menu-dark_bottom li:last-of-type a {
     cursor: pointer;
     display: inline-block;
+}
+
+.navbar-expand-lg .menu-dark_bottom .navbar-nav button.nav-link, .menu-dark .menu-dark_bottom li:last-of-type a {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 
 /*-- SliderMain --*/
 .slider-main .carousel-item {
@@ -551,8 +564,8 @@ textarea {
 }
 
 .slide-item-container {
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     position: absolute;
     top: 0;
     right: 0;
@@ -752,8 +765,8 @@ textarea {
 
 .slider-main .carousel-indicators {
     bottom: 110px;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     margin: 0 auto;
     width: 1240px;
 }
@@ -1009,8 +1022,16 @@ textarea {
     height: 13px;
     background-image: url("../images/icons/ic_plus.svg");
 }
-.title-small {
+.s-c_card.right-1 .title-small {
     padding-bottom: 38px;
+    text-align: left;
+}
+.s-c_card.left-1 .title-small {
+    padding-bottom: 44px;
+    text-align: right;
+}
+.title-small > div {
+    display: inline-block;
     width: 286px;
     text-align: center;
 }
@@ -1024,7 +1045,7 @@ textarea {
     padding-left: 48px;
 }
 .s-c_card.left-1 .title-small h5 {
-    padding-left: 453px;
+    padding-right: 42px;
 }
 .title-small h5 span {
     display: block;
@@ -1075,6 +1096,28 @@ textarea {
     background-image: url("../images/page_index/carousel-2/almera.png");
 }
 
+.counter-carousel {
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+}
+.counter-carousel > div {
+    display: inline-block;
+    width: 56px;
+    text-align: center;
+}
+.counter-carousel_current {
+    font-size: 33px;
+    font-weight: bold;
+    color: #c70023;
+}
+.counter-carousel_general {
+    margin-top: 4px;
+    font-size: 16px;
+    color: #b6b6b6;
+    border-left: 1px solid rgba(25, 25, 25, 0.24)
+}
+
 /*-- NewCar --*/
 
 .new-car-block {
@@ -1083,8 +1126,8 @@ textarea {
 }
 
 .title-block {
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     margin-bottom: 34px;
     width: 100%;
@@ -1160,8 +1203,8 @@ textarea {
 }
 
 .nc-card_top > div {
-    align-content: center;
     justify-content: center;
+    align-content: center;
     height: 100%;
     width: 100%;
 }
